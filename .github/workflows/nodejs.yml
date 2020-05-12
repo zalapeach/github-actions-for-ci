@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
       - uses: actions/upload-artifact@master
         with:
-          name: webpack artifacts
+    needs: build
           path: public/
       - uses: actions/checkout@v1
       - name: npm install and build webpack
